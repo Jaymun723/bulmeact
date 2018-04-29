@@ -1,0 +1,86 @@
+{
+  "name": "bulmeact",
+  "version": "1.0.0",
+  "description": "A react package to use bulma with nice options !",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaymun723/bulmeact.git"
+  },
+  "keywords": [
+    "bulma",
+    "react",
+    "webpack",
+    "parcel-bundler",
+    "sass",
+    "scss",
+    "typescript",
+    "ts"
+  ],
+  "author": "Jaymun723",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaymun723/bulmeact/issues"
+  },
+  "homepage": "https://github.com/Jaymun723/bulmeact#readme",
+  "scripts": {
+    "test": "jest",
+    "build": "cross-env NODE_ENV=production webpack --config utils/webpack.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config utils/bundleanalyzer.dev.js",
+    "prod": "cross-env NODE_ENV=production webpack --config utils/bundleanalyzer.prod.js",
+    "serve": "node utils/serve.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.6",
+    "bulma": "^0.7.1",
+    "classnames": "^2.2.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.12",
+    "@types/react-dom": "^16.0.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "compression": "^1.7.2",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "ts-jest": "^22.4.4",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3",
+    "webpack-merge": "^4.1.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "V:/Projets/bulmeact/utils/setupTests.js",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
